@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <script src="index.js"></script>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQcWnN7yyc20XCi2bVOTGNvc9j3UtWLQpcWQ&s" type="image/x-icon">
+    <title>Weather Card</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .cloudy{
+            background-image: url("https://i.makeagif.com/media/8-26-2023/cjaI99.gif");
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-size: 100vw 100vh; 
+            height: 100vh;
+        }
+        .rainy{
+            background-image: url("https://giffiles.alphacoders.com/105/105296.gif");
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-size: 100vw 100vh; 
+            height: 100vh;
+
+        }
+        .sunny{
+            background-image: url("https://giffiles.alphacoders.com/215/215041.gif");
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-size: 100vw 100vh;
+            height: 100vh;
+        }
+        .snowy{
+            background-image: url("https://www.icegif.com/wp-content/uploads/2022/11/icegif-883.gif");
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-size: 100vw 100vh; 
+            height: 100vh;
+        }
+        .windy{
+            background-image: url("https://i.gifer.com/embedded/download/7eWy.gif");
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-size: 100vw 100vh; 
+            height: 100vh;
+        }
+        .weather-card {
+            width: 18rem;
+            border: 1px solid #d3d3d3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            transition: transform 0.3s ease;
+            
+        }
+        .weather-card:hover {
+            transform: scale(1.20);
+        }
+        .card-title {
+            font-weight: bold;
+            color: #8b8686;
+        }
+        .card-img-top {
+            height: 150px;
+            object-fit: cover;
+        }
+        .error-container {
+            background: rgba(0, 0, 0, 0.6); 
+            text-align: center;
+            padding: 40px;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 8px 18px red;
+            background: white;
+        }
+        .error-container img {
+            width: 350px;
+            margin-bottom: 20px;
+        }
+        .error-container h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .error-container p {
+            font-size: 1.2rem;
+            color: red;
+            margin-bottom: 30px;
+        }
+        .btn-custom {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #ff5252;
+            color: #fff;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
